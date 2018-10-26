@@ -30,7 +30,7 @@ Also you can use the documentation for official [TeamCity agent image](https://h
 
 ## Documentation 
 
-The full documentation is placed on [project site](https://alekspankov.github.io/teamcity-php/).
+The full documentation is placed on [project site](https://alekspankov.github.io/teamcity-agent-php/).
 
 ## Build
 1. Create directory
