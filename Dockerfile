@@ -24,8 +24,6 @@ RUN apt-get update \
     && composer global require 'phpunit/dbunit=*' \
     && composer global require 'phpunit/php-invoker=*' \ 
     && composer global require 'phpunit/phpunit-selenium=*' \
-    && composer global require sebastian/phpdcd \
-    && ln -s ~/.composer/vendor/bin/phpdcd /usr/local/bin/phpdcd \ 
     && composer global require phpmd/phpmd \
     && ln -s ~/.composer/vendor/bin/phpmd /usr/local/bin/phpmd \
     && composer global require pdepend/pdepend \
