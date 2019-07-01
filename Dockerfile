@@ -1,6 +1,6 @@
 FROM jetbrains/teamcity-agent
 
-LABEL maintainer="blogan@collingmedia.com"
+LABEL maintainer="brianldj@gmail.com"
 LABEL version="1.0"
 LABEL description="TeamCity CI Agent with PHP7.3"
 
