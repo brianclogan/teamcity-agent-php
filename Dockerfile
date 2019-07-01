@@ -1,8 +1,8 @@
 FROM jetbrains/teamcity-agent
 
-LABEL maintainer="pankov.ap@gmail.com"
+LABEL maintainer="blogan@collingmedia.com"
 LABEL version="1.0"
-LABEL description="The great TeamCity CI with PHP"
+LABEL description="TeamCity CI Agent with PHP7.3"
 
 ENV DEBIAN_FRONTEND noninteractive
 
