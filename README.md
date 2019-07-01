@@ -4,7 +4,7 @@ Marvellous [TeamCity Server](https://jetbrains.ru/products/teamcity/) with PHP C
 
 ## PHP Tools included
 
-1. PHP 7.2 CLI
+1. PHP 7.3 CLI
 1. PHPUnit version 7 (https://phpunit.de/)
     1. db-unit (https://github.com/sebastianbergmann/dbunit)
     1. php-invoker (https://github.com/sebastianbergmann/php-invoker)
@@ -19,36 +19,14 @@ Marvellous [TeamCity Server](https://jetbrains.ru/products/teamcity/) with PHP C
 
 ## Getting Started
 
-1. Pull image ```docker pull aleksxp/teamcity-agent-php``` _optional_
+1. Pull image ```docker pull darkgoldblade01/teamcity-agent-php``` _optional_
 1. You will need [teamcity-agent](https://hub.docker.com/r/jetbrains/teamcity-server/) to run builds. 
-1. Run ```docker run -it -e SERVER_URL="<url to TeamCity server>"  \ 
+1. Run 
+```docker run -itde --privileged --name=teamcity-php-1 SERVER_URL="http://localhost:8111"  \ 
     -v <path to agent config folder>:/data/teamcity_agent/conf  \      
-    aleksxp/teamcity-agent-php``
-
-Read more about **docker run** option in [official Docker documentstion](https://docs.docker.com/engine/reference/run/). 
-Also you can use the documentation for official [TeamCity agent image](https://hub.docker.com/r/jetbrains/teamcity-agent/)
-
-## Documentation 
-
-The full documentation is placed on [project site](https://alekspankov.github.io/teamcity-agent-php/).
-
-## Build
-1. Create directory
-1. CD into created directory
-1. Create Dockerfile. Use ```FROM aleksxp/teamcity-php```. Add whatever you need. 
-1. Run ```docker build -t your_image_name .```
-
-Read more about **Dockerfile** and **docker build** in  [official Docker documentation](https://docs.docker.com/engine/reference/builder/).
-
-### Prerequisites
-
-1. [Docker](https://docs.docker.com/engine/installation/)
+    darkgoldblade01/teamcity-agent-php```
 
 
-## Authors
+### MORE INFORMATION
 
-* **Alexander Pankov** <ap@wdevs.ru>
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This is a fork from [alekspankov/teamcity-agent-php](https://github.com/alekspankov/teamcity-agent-php), to upgrade to PHP7.3, and add in more of the core features required for Laravel testing.
