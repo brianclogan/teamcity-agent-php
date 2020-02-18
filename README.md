@@ -2,20 +2,33 @@
 
 Marvellous [TeamCity Server](https://jetbrains.ru/products/teamcity/) with PHP CI Tools (see below). This build is based on [official TeamCity Agent Docker build](https://hub.docker.com/r/jetbrains/teamcity-agent/). 
 
-## PHP Tools included
+## PHP Setup
+Has the base install of everything required for basic PHP testing out of the box. Need to add something? Submit a pull request!
 
-1. PHP 7.3 CLI
-1. PHPUnit version 7 (https://phpunit.de/)
-    1. db-unit (https://github.com/sebastianbergmann/dbunit)
-    1. php-invoker (https://github.com/sebastianbergmann/php-invoker)
-    1. phpunit-selenium (https://github.com/giorgiosironi/phpunit-selenium)
-1. PHP Dead Code Detector (https://github.com/sebastianbergmann/phpdcd) _(abandoned, for backward compatibility only)_
-1. PHPMD (https://github.com/phpmd/phpmd)
-1. PHP_Depend (https://github.com/pdepend/pdepend)
-1. PHP Documentor (https://www.phpdoc.org/)
-1. PHP_CodeBrowser (https://github.com/mayflower/PHP_CodeBrowser)
-1. PHPLoc (https://github.com/sebastianbergmann/phploc)
-1. PHP_CodeSniffer (https://github.com/squizlabs/PHP_CodeSniffer)
+ - php7.4-cli 
+ - php-pear 
+ - php7.4-curl 
+ - php7.4-dev 
+ - php7.4-gd 
+ - php7.4-mbstring 
+ - php7.4-zip 
+ - php7.4-mysql 
+ - php7.4-xml 
+ - php7.4-intl 
+ - php7.4-pgsql 
+ - php7.4-json 
+ - php7.4-xdebug
+
+## Testing Setup
+All testing tools are included via composer, aside from phpDocumentor which is downloaded via the `.phar` file in the latest release candidate.
+
+ - phpunit/phpunit ^7 (https://phpunit.de/)
+ - phpmd/phpmd ^2.8 (https://github.com/phpmd/phpmd)
+ - pdepend/pdepend ^2.7 (https://github.com/pdepend/pdepend)
+ - sebastian/phpcpd ^4.1 (https://github.com/sebastianbergmann/phpcpd)
+ - phploc/phploc ^5.0 (https://github.com/sebastianbergmann/phploc)
+ - squizlabs/php_codesniffer ^3.5 (https://github.com/squizlabs/PHP_CodeSniffer)
+ - phpdocumentor/phpdocumentor 3.0.0-rc (https://www.phpdoc.org/)
 
 ## Getting Started
 
