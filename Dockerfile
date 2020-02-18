@@ -42,4 +42,4 @@ RUN apt-get update \
 
     # Finally, install NPM
     && apt-get update \
-    && apt-install -y npm
+    && apt-get install -y npm
