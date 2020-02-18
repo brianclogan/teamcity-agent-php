@@ -17,13 +17,12 @@ RUN apt-get update \
     && cd ~ \
 
     # Install Composer
-    && php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
-    && php -r "if (hash_file('sha384', 'composer-setup.php') === 'e0012edf3e80b6978849f5eff0d4b4e4c79ff1609dd1e613307e16318854d24ae64f26d17af3ef0bf7cfb710ca74755a') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" \
-    && php composer-setup.php --install-dir=/usr/bin --filename=composer \
-    && php -r "unlink('composer-setup.php');" \
+    && wget -q https://getcomposer.org/composer-stable.phar \
+    && mv ~/composer-stable.phar /usr/bin && chmod a+x /usr/bin/composer-stable.phar \
+    && ln -s /usr/bin/composer-stable.phar /usr/bin/composer \
 
     # Install phpDocumentor (3.0.0-rc)
-    && cd ~ && wget -q https://github.com/phpDocumentor/phpDocumentor/releases/download/v3.0.0-rc/phpDocumentor.phar \
+    && wget -q https://github.com/phpDocumentor/phpDocumentor/releases/download/v3.0.0-rc/phpDocumentor.phar \
     && mv ~/phpDocumentor.phar /usr/bin && chmod a+x /usr/bin/phpDocumentor.phar \
 
     # Composer Global Require Everything...
