@@ -2,3 +2,5 @@ services:
   - docker
 script:
   - docker build -t darkgoldblade01/teamcity-agent-php .
+after_success:
+  - wget -q $HUB_WEBHOOK

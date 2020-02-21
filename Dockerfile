@@ -21,7 +21,7 @@ RUN apt-get update \
     && wget -q https://github.com/phpDocumentor/phpDocumentor/releases/download/v3.0.0-rc/phpDocumentor.phar \
     && mv ~/phpDocumentor.phar /usr/bin && chmod a+x /usr/bin/phpDocumentor.phar \
     # Composer Global Require Everything...
-    && composer global require 'phpunit/phpunit=^7' 'phpunit/php-code-coverage=^7' 'phpmd/phpmd=^2.8' 'pdepend/pdepend=^2.7' 'sebastian/phpcpd=^4.1' 'phploc/phploc=^5.0' 'squizlabs/php_codesniffer=^3.5' \
+    && composer global require 'phpunit/phpunit=^7' 'phpunit/php-code-coverage=^6' 'phpmd/phpmd=^2.8' 'pdepend/pdepend=^2.7' 'sebastian/phpcpd=^4.1' 'phploc/phploc=^5.0' 'squizlabs/php_codesniffer=^3.5' \
     # System Links for DAYSSSSSS
     && ln -s /usr/bin/phpDocumentor.phar /usr/bin/phpdoc \
     && ln -s ~/.composer/vendor/bin/phpunit /usr/local/bin/phpunit \
