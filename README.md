@@ -17,6 +17,7 @@ Has the base install of everything required for basic PHP testing out of the box
  - php7.4-intl 
  - php7.4-pgsql 
  - php7.4-json 
+ - php7.4-imagick
  - php7.4-xdebug
 
 ## Testing Setup
