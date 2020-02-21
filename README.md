@@ -1,5 +1,7 @@
 # TeamCity Agent (with PHP extensions) 
 
+![Build Status](https://img.shields.io/travis/darkgoldblade01/teamcity-agent-php?style=for-the-badge)
+
 Marvellous [TeamCity Server](https://jetbrains.ru/products/teamcity/) with PHP CI Tools (see below). This build is based on [official TeamCity Agent Docker build](https://hub.docker.com/r/jetbrains/teamcity-agent/). 
 
 ## PHP Setup
