@@ -37,7 +37,7 @@ All testing tools are included via composer, aside from phpDocumentor which is d
 
 1. Pull image ```docker pull darkgoldblade01/teamcity-agent-php``` _optional_
 1. You will need [teamcity-agent](https://hub.docker.com/r/jetbrains/teamcity-server/) to run builds. 
-1. Run 
+1. Run the container
 ```
 docker run -itd --privileged --name=teamcity-php-1 -e SERVER_URL="http://localhost:8111"  -v <path to agent config folder>:/data/teamcity_agent/conf darkgoldblade01/teamcity-agent-php
 ```

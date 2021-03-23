@@ -1,8 +1,9 @@
 FROM jetbrains/teamcity-agent
 LABEL maintainer="me@darkgoldblade01.com"
-LABEL version="1.1"
+LABEL version="1.3"
 LABEL description="TeamCity CI Agent with PHP7.4"
 ENV DEBIAN_FRONTEND noninteractive
+USER root
 RUN apt-get update \
     && apt-get install -y software-properties-common wget zip \
     && add-apt-repository ppa:ondrej/php \
