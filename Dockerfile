@@ -19,7 +19,7 @@ RUN apt-get update \
     && mv ~/composer-stable.phar /usr/bin && chmod a+x /usr/bin/composer-stable.phar \
     && ln -s /usr/bin/composer-stable.phar /usr/bin/composer \
     # Install phpDocumentor (3.0.0-rc)
-    && wget -q https://github.com/phpDocumentor/phpDocumentor/releases/download/v3.0.0-rc/phpDocumentor.phar \
+    && wget -q https://phpdoc.org/phpDocumentor.phar \
     && mv ~/phpDocumentor.phar /usr/bin && chmod a+x /usr/bin/phpDocumentor.phar \
     # Composer Global Require Everything...
     && composer global require 'phpunit/phpunit=^7' 'phpunit/php-code-coverage=^6' 'phpmd/phpmd=^2.8' 'pdepend/pdepend=^2.7' 'sebastian/phpcpd=^4.1' 'phploc/phploc=^5.0' 'squizlabs/php_codesniffer=^3.5' \
