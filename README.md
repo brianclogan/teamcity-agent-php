@@ -21,6 +21,7 @@ Has the base install of everything required for basic PHP testing out of the box
  - php7.4-json 
  - php7.4-imagick
  - php7.4-xdebug
+ - php7.4-sqlite
 
 ## Testing Setup
 All testing tools are included via composer, aside from phpDocumentor which is downloaded via the `.phar` file in the latest release candidate.
