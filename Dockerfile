@@ -10,8 +10,8 @@ RUN apt-get update \
     && apt-get update -qq \
     # Install NodeJS
     && apt-get install -y nodejs \
-    # Install PHP7.4
-    && apt-get install -y php7.4-cli php-pear php7.4-curl php7.4-dev php7.4-gd php7.4-mbstring php7.4-zip php7.4-mysql php7.4-xml php7.4-intl php7.4-pgsql php7.4-json php7.4-imagick php7.4-xdebug\
+    # Install PHP7.4 and SQLite
+    && apt-get install -y php7.4-cli php-pear php7.4-curl php7.4-dev php7.4-gd php7.4-mbstring php7.4-zip php7.4-mysql php7.4-xml php7.4-intl php7.4-pgsql php7.4-json php7.4-imagick php7.4-xdebug sqlite3 libsqlite3-dev\
     && rm -rf /var/lib/apt/lists/* \
     && cd ~ \
     # Install Composer
